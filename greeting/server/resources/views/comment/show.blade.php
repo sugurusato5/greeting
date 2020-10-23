@@ -7,25 +7,8 @@
     <title></title>
 </head>
 <body>
-    <?php if($msg == 'morning') : ?>
-        <h2>朝のあいさつ</h2>
-        <h3>おはようございます</h3>
-    <?php elseif ($msg == 'afternoon') : ?>
-        <h2>昼のあいさつ</h2>
-        <h3>こんにちは</h3>
-    <?php elseif ($msg == 'evening') : ?>
-        <h2>夕方のあいさつ</h2>
-        <h3>こんばんは</h3>
-    <?php elseif ($msg == 'night') : ?>
-        <h2>夜のあいさつ</h2>
-        <h3>こんばんは</h3>
-    <?php elseif ($msg == 'freeword') : ?>
-        <h2>自由なメッセージ</h2>
-        <h3>{{$comment}}</h3>
-    <?php elseif ($msg == 'random') : ?>
-        <h2>ランダムなメッセージ</h2>
-        <h3>{{$greeting}}</h3>
-    <?php endif ; ?>
+    <h2>{{$greeting}}</h2>
+    <h3>{{$greeting1}}</h3>
 </body>
 </html>
 

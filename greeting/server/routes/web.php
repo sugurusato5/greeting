@@ -19,5 +19,5 @@ Route::get('/', function () {
 });
 
 // Route::<HTTPメソッド>('<アドレス>', '<コントローラー名@アクション名>');
-Route::get('comments/{msg}', 'commentController@show');
-Route::get('comments/{msg}/{comment}', 'commentController@show');
+Route::get('comments/{msg}/{comment?}', 'commentController@show');
+// Route::get('comments/{msg}/', 'commentController@show');
