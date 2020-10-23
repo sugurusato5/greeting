@@ -6,9 +6,14 @@ use Illuminate\Http\Request;
 
 class commentController extends Controller
 {
-    public function show($msg, $comment = "")
+    public function show($msg, $comment = NULL)
     {
-        $date = ['msg' => $msg, 'comment' => $comment];
-        return view('comment.show', $date,);
+        $random = ['おはよう','こんにちは','こんばんは','おやすみ'];
+        $date = [
+                'msg' => $msg, 
+                'comment' => $comment,
+                'greeting' => $random[array_rand($random)],
+                ];
+        return view('comment.show', $date);
     }
 }

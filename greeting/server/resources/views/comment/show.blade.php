@@ -24,9 +24,8 @@
         <h3>{{$comment}}</h3>
     <?php elseif ($msg == 'random') : ?>
         <h2>ランダムなメッセージ</h2>
-        <h3><?php $greeting = ['おはよう','こんにちは','こんばんは','おやすみ']; 
-                $random = array_rand($greeting);
-                echo $greeting[$random]; ?></h3>
+        <h3>{{$greeting}}</h3>
     <?php endif ; ?>
 </body>
 </html>
+
